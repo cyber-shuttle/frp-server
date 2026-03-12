@@ -2,11 +2,16 @@
 
 Go-based relay control plane for FRP tunneling. Manages tunnel provisioning, API key auth, JWT tokens, and coordinates with the FRP relay engine for P2P connections.
 
+## Prerequisites
+
+- Go 1.25+
+
 ## Commands
 
 ```bash
 go build -o frp-server .        # Build
 go test ./...                   # Run tests
+go vet ./...                    # Static analysis
 ```
 
 ## Running
